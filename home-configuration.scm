@@ -107,7 +107,9 @@
 		   `((".config/kanshi/config"
 		      ,(local-file "files/kanshi/config" #:recursive? #t))
 		     (".config/foot/foot.ini"
-		      ,(local-file "files/foot/foot.ini" #:recursive? #t))))
+		      ,(local-file "files/foot/foot.ini" #:recursive? #t))
+		     (".config/git/config"
+		      ,(local-file "files/git/config" #:recursive? #t))))
    (service home-bash-service-type
 	    (home-bash-configuration
 	     (guix-defaults? #t)))
